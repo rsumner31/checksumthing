@@ -52,6 +52,7 @@ def modify_hash(hash_value, args):
     Generates a new hash from an existing hash.
 
     :param hash_value: Original hash value to be modified
+    :param filepath: the path of the checksum files being processed
     :param args: User arguments from arg parse
     :return: Newly generated hash value
     """

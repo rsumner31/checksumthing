@@ -82,7 +82,7 @@ def main():
             old_hash = hashing.read_hash(filepath, hash_length=hash_length)
 
             # Create a new hash to replace the exiting
-            new_hash = hashing.modify_hash(old_hash, args=args)
+            new_hash = hashing.modify_hash(old_hash, filepath, args=args)
 
             # Overwrite the original file with the new hash
             pre_hash_text = hashing.create_decoration(args.pre, filepath, args)
